@@ -1,0 +1,519 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    contain: paint;
+    width: 100%;
+    height: 100%;
+}
+
+/* header*/
+
+header {
+    background-color:  #fece00;
+    width: 100%;
+    height: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .header-section {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: 49px;
+}
+
+
+/*Logo*/
+
+header .header-section .logo{
+    padding: 5px;
+}
+header .header-section .logo img{
+    width: 40px;
+    
+}
+/*Logo*/
+/*############################"*/
+/*############################"*/
+/*Buttons*/
+
+
+.header-section .btns {
+    display: flex;
+    width: 135px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:766px){
+    .header-section nav .btns {
+    width: 100%;    
+}
+}
+
+
+
+.btns .language {
+    width: 123px;
+    height: 50px; /*Important*/
+}
+
+.btns li:hover .other-lan {
+    display: block;
+}
+
+.btns .language .lan-flag {
+    width:38px;
+    border-radius: 5px;
+}
+
+.btns .language .main-lan {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 112px;
+    height: 49px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.btns .language .main-lan h4{
+    /* font-size: 14px; */
+    font-weight: normal;
+}
+
+
+.btns .language .main-lan i {
+    font-size: 12px;
+}
+
+
+
+
+.btns .language .other-lan{
+    background-color:white ;
+    border-radius: 5px;
+    width: 138px;
+    margin: 0 auto;
+    display: none;
+    animation-name: ani-one;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; /*Good one*/
+    box-shadow: 0px 0px 11px -5px #00000063;
+}
+
+.btns .language .other-lan li{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.btns .language .other-lan li:hover{
+    background-color: #eee;
+}
+
+
+
+.btns li:hover .other-lan {
+    display: block;
+}
+
+
+@keyframes ani-one {
+    from{
+        margin-top: 15px;
+        opacity: 0.1;
+    }
+    to{
+        margin-top: -5px;
+        opacity: 1;
+    }
+}
+
+
+
+.btns .language .other-lan li a{
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-size: 14px;
+    padding: 5px 0px;
+}
+.btns .language .other-lan li a img{
+    margin-right: 5px;
+}
+
+
+/* The end of the  Header */
+
+.main-section {
+    margin: 0 auto;
+    width: 100%;
+    height: 82%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* @media(min-height:720px){
+    .main-section {
+        height: 610px;
+    }
+}
+
+
+@media(min-height:740px){
+    .main-section {
+        height: 630px;
+    }
+}
+
+@media(min-height:844px){
+    .main-section {
+        height: 734px;
+    }
+}
+
+@media(min-height:851px){
+    .main-section {
+        height: 742px;
+    }
+}
+
+
+@media(min-height:896px){
+    .main-section {
+        height: 804px;
+    }
+}
+
+
+@media(min-width:768px){
+    .main-section {
+        width: 100%;
+    }
+}
+
+@media(min-height:915px){
+    .main-section {
+        height: 804px;
+    }
+}
+
+@media(min-height:1180px){
+    .main-section {
+        height: 1070px;
+    }
+}
+
+
+@media(min-height:1024px){
+    .main-section {
+        height: 914px;
+    }
+}
+
+@media(min-height:1368px){
+    .main-section {
+        height: 1257px;
+    }
+} */
+
+
+
+
+
+.main-section .login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    height: 500px;
+    padding: 10px;
+    box-shadow: 0px 0px 32px -19px grey;
+    border-radius: 20px;
+}
+
+@media(max-width:600px) {
+    .main-section .login-section{
+        width: 92%;
+        height: 373px;    
+    } 
+}
+
+
+
+
+
+
+
+.login-section .brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color:rgba(255, 183, 0, 0.246) ; */
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+
+.login-section .brand h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 10px 0px;
+}
+
+@media(max-width:1116px){
+    .login-section .brand h1{
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+    }
+}
+
+
+.main-section .login-section .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section .login-section .inputs {
+    position: relative;
+    width: 100%;
+}
+
+.main-section .login-section .inputs form{
+    background-color:white;
+    margin-top: 20px;
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.main-section .login-section .inputs form input{
+    border-radius: 5px;
+    border:1px solid lightgray;
+    height: 40px;
+}
+
+
+
+.main-section .login-section .inputs form .main-input{
+    padding: 10px;
+    outline-color:#fece00 ;
+    text-transform: lowercase;
+}
+
+.main-section .login-section .inputs form span {
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    font-size: 15px;
+    color: #fece00;
+}
+
+
+
+
+ .main-section .login-section .inputs form:hover .howtouse{
+    display: block;
+} 
+
+
+.main-section .login-section .inputs form .howtouse{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:-200px;
+    left: 150px;
+    transition: 0.4s;
+    display: none;
+    animation-name: howto;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@media(max-width:1116px){
+    .main-section .login-section .inputs form .howtouse {
+        left: 110px;
+    }
+}
+
+@media(max-width:1116px){
+    .main-section .login-section .inputs form .howtouse {
+        left: 110px;
+    }
+}
+
+
+@media(max-width:500px){
+    .main-section .login-section .inputs form .howtouse {
+        left: 10px;
+    }
+}
+
+
+
+
+@keyframes howto {
+    from{
+        top: -200px;
+        opacity: 0;
+    }
+    to {
+        top: -230px;
+        opacity: 1;
+    }
+}
+
+
+
+.main-section .login-section .inputs form .howtouse img{
+    width:300px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 14px -9px gray;
+}
+
+.main-section .login-section .inputs form .btn {
+    background-color: #fece00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.main-section .main-image {
+    width: 43%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section .main-image img {
+    width: 85%;
+}
+
+@media(max-width:1116px) {
+    .main-section .main-image img {
+        width: 100%;
+    }    
+}
+
+@media(max-width:600px) {
+    .main-section .main-image {
+      display: none;      
+    }    
+}
+
+footer {
+    background-color: #fece00;
+    width: 100%;
+    height: 9%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .footer-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+footer .footer-section .text {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:907px){
+    footer .footer-section .text {
+        width: 60%;
+    } 
+}
+
+@media(max-width:567px){
+    footer .footer-section .text {
+        font-size: 10px;
+    }  
+}
+
+
+
+footer .footer-section .social-media{
+    width: 17%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+@media(max-width:567px){
+    footer .footer-section .social-media {
+        width: 26%;
+    }  
+}
+
+
+footer .footer-section .social-media i {
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+@media(max-width:567px){
+    footer .footer-section .social-media i {
+        font-size: 13px;
+    }  
+}
+
+footer .footer-section .text h4{
+    color: white;
+    font-weight: bold;
+}
